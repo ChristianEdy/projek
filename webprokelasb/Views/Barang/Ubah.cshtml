@@ -1,0 +1,16 @@
+﻿@model webprokelasb.Entitas.Barang
+
+
+<h2>Ubah Kategori</h2>
+<form action="/Barang/Ubah" method="post">
+    <label>Kode Barang</label>
+    <input name="KodeBarang" value="@Model.KodeBarang" readonly />
+    <label>Nama Barang</label>
+    <input name="NamaBarang" value="@Model.NamaBarang" />
+    <label>Harga</label>
+    <input name="Harga" value="@Model.harga" />
+    <label>Stok</label>
+    <input name="Stok" value="@Model.Stok" />
+    <button type="submit">UBAH</button>
+</form>
+

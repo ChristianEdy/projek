@@ -1,0 +1,13 @@
+﻿@model webprokelasb.Entitas.Barang
+<h2>konfirmasi hapus</h2>
+<h3>apakah ingin menghapus kategori dengan Kode Barang : @Model.KodeBarang?</h3>
+
+<form action="/Barang/Hapus" method="post">
+    <input name="KodeBarang" value="@Model.KodeBarang" hidden />
+    <input name="NamaBarang" value="@Model.NamaBarang" hidden />
+    <input name="Harga" value="@Model.harga" hidden />
+    <input name="Stok" value="@Model.Stok" hidden />
+
+    <button type="submit" class="btn btn-success">ya</button>
+    <a class="btn btn-danger" href="/Barang/Index">tidak</a>
+</form>

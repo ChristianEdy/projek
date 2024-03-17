@@ -1,0 +1,11 @@
+﻿@model webprokelasb.Entitas.Kategori
+
+
+<h2>Ubah Kategori</h2>
+<form action="/Kategori/Ubah" method="post">
+    <label>Nim</label>
+    <input name="KodeKategori" value="@Model.KodeKategori" readonly />
+    <label>Nama</label>
+    <input name="NamaKategori" value="@Model.NamaKategori" />
+    <button type="submit">UBAH</button>
+</form>

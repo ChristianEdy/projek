@@ -1,0 +1,29 @@
+﻿@model List<webprokelasb.Entitas.Kategori>
+<h2>Kategori</h2>
+<h2>    </h2>
+<a href="/Kategori/Tambah">Tambah</a>
+<table>
+    <tr style="background-color:darkgoldenrod;">
+        <th>NO.</th>
+        <th>Kode Kategori</th>
+        <th>Nama Kategori</th>
+        <th>Aksi</th>
+    </tr>
+    @if (Model.Count > 0)
+    {
+        for (int i = 0; i < Model.Count; i++)
+        {
+<tr>
+    <td>@(i+1)</td>
+    <td><a href="/Kategori/Detil?KodeKategori=@Model[i].KodeKategori">@Model[i].KodeKategori</a></td>
+    <td>@Model[i].NamaKategori</td>
+    <td><a href="/Kategori/ubah?KodeKategori=@Model[i].KodeKategori">Ubah</a></td>
+    <td><a href="/Kategori/Hapus?KodeKategori=@Model[i].KodeKategori">Hapus</a></td>
+
+</tr>
+        }
+    }
+
+</table>
+
+

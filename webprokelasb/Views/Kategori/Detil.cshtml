@@ -1,0 +1,22 @@
+﻿@model webprokelasb.Entitas.Kategori
+<h2>Detil Kategori</h2>
+@if (Model != null)
+{
+    <div>
+        <div class="form-group">
+            <div>
+                <h4> Kode Kategori :<strong>@Model.KodeKategori</strong></h4>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-9">
+                <h4> Nama Kategori :<strong> @Model.NamaKategori</strong></h4>
+            </div>
+        </div>
+    </div>
+}
+else
+{
+    <h2>Data Kategori Tidak Ditemukan</h2>
+}
+
